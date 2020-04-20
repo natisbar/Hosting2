@@ -6,6 +6,7 @@ html {
 body {
     font-family: Verdana;
     /*font-size: 1.6rem;*/
+    background-color: white;
 }
 
 .textogood {
@@ -13,6 +14,7 @@ body {
     left: 10%;
     width: 80%;
     margin: auto;
+    text-align: left;
     /* padding: 5%; */
 }
 
@@ -21,7 +23,6 @@ body {
 }
 
 .products {
-    background-image: url("../images/fondo.png");
     height: 100px;
     background-size: cover;
     background-position: center top;
@@ -31,14 +32,20 @@ body {
 }
 
 .product {
-    padding: 5%;
-    width: 80%
+    padding: 5% 5% 0.1% 5%;
+    width: 90%
 }
 
 .product .content {
     background-color: white;
     padding: 10px;
     box-shadow: 0 0 5px #947c7c;
+}
+
+.video_content {
+    text-align: center;
+    padding: 20px;
+    padding-right: 50px;
 }
 
 .img_content {
@@ -146,6 +153,8 @@ body {
     padding: 0px;
     float: left;
     background-color: white;
+    margin-top: 2%;
+    margin-bottom: 2%;
     /*padding: 10px;*/
 }
 
@@ -156,6 +165,7 @@ body {
     content: "";
     display: table;
     clear: both;
+    background-color: white;
 }
 
 
@@ -196,50 +206,56 @@ body {
 
 .navbar {
     overflow: hidden;
-    background-color: #F4F6F6;
+    background-color: #f9f9f9;
     padding-top: 10px;
     padding-bottom: 10px;
     top: 0;
     /* adicionado */
     width: 100%;
     /* adicionado */
+    height: 10%;
     position: fixed;
 }
 
 .navbar a {
-    float: left;
+    float: right;
     font-size: 16px;
     color: black;
     text-align: center;
+    margin-top: 10px;
     padding: 14px 16px;
+    /* padding-top: ; */
     text-decoration: none;
 }
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-    background-color: rgb(199, 202, 202);
+    background-color: #FF560A;
+    color: white;
 }
 
-.botonactivo1 {
+
+/* .botonactivo1 {
     background-color: rgb(199, 202, 202);
 }
 
 .botonactivo2 {
-    color: black;
+    color: white;
     font-weight: bold;
-}
+} */
 
 .navbar a.active {
-    background-color: rgb(199, 202, 202);
-    color: black;
+    background-color: #FF560A;
+    color: white;
     font-weight: bold;
 }
 
 
 /* BOTON AYUDA */
 
-.dropdown {
-    float: left;
+
+/* .dropdown {
+    float: right;
     overflow: hidden;
 }
 
@@ -256,7 +272,7 @@ body {
 
 .dropdown-content {
     display: none;
-    /* position: absolute; */
+    //position: absolute;
     position: fixed;
     background-color: #f9f9f9;
     min-width: 160px;
@@ -279,11 +295,77 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
+} */
 
 .main {
+    background-color: white;
     padding: 16px;
-    margin-top: 50px;
+    margin-top: 20px;
     /* height: 1500px; */
     /* Used in this example to enable scrolling */
+}
+
+.video-responsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+/**footer**/
+
+.site-footer {
+    /* background-color: #f9f9f9; */
+    background-color: #FF560A;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    height: 10%;
+}
+
+.site-footer p {
+    color: black;
+    font-size: 20px;
+    /* font-weight: 400; */
+    font-family: 'Cormorant Upright', serif;
+}
+
+.site-footer p span {
+    font-weight: 700;
+}
+
+
+/* @media only screen and (min-width:600px) {
+    .site-footer p {
+        font-size: 4rem;
+    }
+} */
+
+
+/* Globales */
+
+.contenedor {
+    /* max-width: 1200px; */
+    width: 100%;
+    margin: auto;
+}
+
+
+/*utilidades*/
+
+.no-margin {
+    margin: 0;
+    font-size: 14px;
 }
