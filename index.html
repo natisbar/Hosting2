@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Style/style.css">
+    <title>Tips para el alistamiento de cursos</title>
+</head>
+
+<header></header>
+
+<body>
+
+    <style type="text/css">
+        .column {
+            padding: 0px;
+            float: left;
+            background-color: white;
+            /*padding: 10px;*/
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+    <div class="navbar">
+        <a class="active" href="index.html">Inicio</a>
+        <div class="dropdown">
+            <button class="dropbtn">Ayuda 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="rol.html">Sobre mi rol</a>
+                <a href="#" id="gestor">¿Quién es mi gestor?</a>
+                <a href="#">Estados</a>
+            </div>
+        </div>
+        <!-- <a href="rol.html">Sobre mi rol</a>
+        <a href="#" id="gestor">Mi gestor</a> -->
+        <a href="acreditacion.html">Acreditación</a>
+        <a href="certificacion.html">Certificación</a>
+        <div class="identidad" style="display: inline; position: absolute; right:1%">
+            <img src="images/logofinal.png" width=300px alt="Logo UNAD y VIMEP">
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="textogood">
+            <p>
+                <h1>
+                    <center>Tips para el alistamiento de cursos</center>
+                </h1>
+            </p>
+            <p align="left">Respetado(a) diseñador(a), a continuación, encontrará de manera resumida, breve y sencilla algunos de los pasos que debe adelantar en su proceso de Acreditación o Certificación de cursos. En cada paso, se adjuntan vídeos tutoriales o documentos
+                que resumen el proceso a adelantar de acuerdo con los <b>Lineamientos Tecnopedagógicos para el diseño de cursos virtuales versión 4.0</b>, así como imágenes de apoyo que le indicarán la ubicación de aquellos archivos, documentos y formatos
+                solicitados en nContents.</p>
+            <p align="left">Recuerde que el éxito del proceso de alistamiento radica en la lectura comprensiva de los lineamientos. Este recurso, constituye una ayuda adicional para el diseñador; por lo tanto, no suprime la lectura y consulta del mismo.</p>
+            <p align="left">Lo invitamos a consultar de manera simultánea este recurso con el documento mencionado, de modo que su proceso de alistamiento sea lo mas completo posible.</p>
+        </div>
+        <div class="row" align="center">
+            <div class="column" style="width:50%;">
+                <div class="product">
+                    <div class="content">
+                        <div class="img_content">
+                            <img src="images/imagen3.png" class="imagen-efecto" width=70% height=70% alt="">
+                        </div>
+                        <a href="acreditacion.html"><button class=main_botton>Acreditación</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="column" style="width:50%;">
+                <div class="product">
+                    <div class="content">
+                        <div class="img_content">
+                            <img src="images/imagen4.png" class="imagen-efecto" width=70% height=70% alt="">
+                        </div>
+                        <a href="certificacion.html"><button class=main_botton>Certificación</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The gestor Modal -->
+        <div id="mygestor" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content" style="width: 70%;">
+                <span class="close" id="closeModal_gestor"><button class="buttonmodal">&times;</button></span>
+
+                <div class="row" align="center">
+                    <div class="column" style="width:100%;">
+                        <div class="textogood" Align="left">
+                            <h2 align="center">¿Quién es mi gestor?</h2>
+                            <p>A través del siguiente video, conozca en dónde puede ubicar a su gestor.</p>
+                        </div>
+                        <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/2e438dc92f4b4553921b5e950e81ffbd" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height:100%;"></iframe></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- <br><br><br><br><br> -->
+    <script src=" Js/script3.js "></script>
+    <script src=" Js/script.js "></script>
+    <script src="Js/cerrarModal.js "></script>
